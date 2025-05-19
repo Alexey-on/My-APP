@@ -33,4 +33,18 @@ func ProcessProducts()
             Price: ,
         },
         
+
+         repository.Store(Laptop)
+         repository.Store(Headphones)
+         repository.Store(TV)
+}
+
+
+func StartProcessing() {
+ ticker := time.NewTicker(time.Second * 5) // каждые 5 секунд
+ go func() {
+ for range ticker.C {
+ ProcessProducts()
+ }
+ }()
 }

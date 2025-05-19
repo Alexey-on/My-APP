@@ -3,21 +3,22 @@ package repository
 import "internal/model"
 
 var (
-	laptops    []*model.Laptop
-	headphones []*model.Headphones
-	tv         []*model.TV
+	laptops    []model.Laptop
+	headphones []model.Headphones
+	tv         []model.TV
 )
 
-func check (model.Laptop, model.Headphones, model.TV. Model)
+func check (model.Model)
 
-switch v (type) := model. {
+switch v := model. (type) {
 	
-case *model.Laptop:
+case model.Laptop:
 	model.Laptop = append(model.Laptop,v)
 
-case *model.Headphones:
-	*model.Headphones = append(*model.Headphones,v)	
+case model.Headphones:
+	model.Headphones = append(model.Headphones,v)	
 
-case *model.TV = append(*model.TV,v)	
+case model.TV:
+    model.TV = append(model.TV,v)	
 	
 }
