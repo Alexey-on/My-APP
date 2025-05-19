@@ -5,8 +5,10 @@ import "internal/model"
 var (
 	laptops    []*model.Laptop
 	headphones []*model.Headphones
-	tvs        []*model.TV
+	tv         []*model.TV
 )
+
+func check (model.Laptop, model.Headphones, model.TV. Model)
 
 switch v (type) := model. {
 	
